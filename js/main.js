@@ -18,7 +18,8 @@ searchInputEl.addEventListener('blur', function() {
 
 const badgeEl = document.querySelector('header .badges');
 
-window.addEventListener('scroll', _.throttle(function () {
+window.addEventListener('scroll', _.throttle(function () { 
+    // _.throttle(함수, 시간), 스크롤 횟수 제한
     if(window.scrollY > 500) {
         // 배지 숨기기
         // gsap.to(요소, 지속시간, 옵션);
@@ -34,7 +35,6 @@ window.addEventListener('scroll', _.throttle(function () {
         });
     }
 }, 300));
-// _.throttle(함수, 시간)
 
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
@@ -49,7 +49,7 @@ fadeEls.forEach(function(fadeEl, index) {
 // new Swiper(선택자, 옵션)
 new Swiper('.notice-line .swiper', {
     direction: 'vertical',
-    // autoplay: true,
+    autoplay: true,
     loop: true,
 });
 new Swiper('.promotion .swiper', {
