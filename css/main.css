@@ -608,3 +608,27 @@ background-position: center;
 }
 
 
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+    background-image: url(../images/favorite_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.pick-your-favorite .inner {
+    padding: 110px 0;
+}
+.pick-your-favorite .text-group {
+    margin-left: 100px;
+    display: flex;
+    width: 362px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.pick-your-favorite .text-group .title {
+    margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+    margin-bottom: 40px;
+}
